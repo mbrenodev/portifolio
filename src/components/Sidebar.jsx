@@ -1,19 +1,22 @@
-import SocialNetwoeks from './SocialNetwoeks';
+import SocialNetworkContainer from "./SocialNetworkContainer";
+import InformationContainer from "./InformationContainer";
 
-import Avatar from '../img/chs.png';
+import Avatar from "../img/chs.png";
 
-import '../styles/components/slidebar.sass';
+import "../styles/components/sidebar.sass";
 
 const Sidebar = () => {
   return (
     <aside id="sidebar">
-      <img src={Avatar} alt="chs" />
+      <img src={Avatar} alt="Chs" />
       <p className="title">Desenvolvedor</p>
-      <SocialNetwoeks />
-      <p>informações de contato</p>
-      <a href="" className="btn">Download do Currículo</a>
+      <SocialNetworkContainer />
+      <InformationContainer />
+      <a href="#" className="btn">
+        Download currículo
+      </a>
     </aside>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

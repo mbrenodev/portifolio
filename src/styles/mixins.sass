@@ -1,13 +1,10 @@
-// Importando o arquivo de variáveis
-@use 'variables';
+@use 'variables'
 
-// Definindo um mixin chamado 'center'
 @mixin center
     display: flex
     justify-content: center
     align-items: center
 
-// Definindo um mixin chamado 'btn'
 @mixin btn
     padding: 1rem 1.2rem
     color: variables.$text-color
@@ -15,7 +12,6 @@
     text-decoration: none
     border-radius: 3rem
 
-// Definindo um mixin chamado 'gradient-border'
 @mixin gradient-border
     content: ""
     background: variables.$gradient
