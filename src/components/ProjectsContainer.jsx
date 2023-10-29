@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ProjectsContainer = () => {
   return (
     <section className="projects-container">
@@ -8,9 +10,11 @@ const ProjectsContainer = () => {
         cumque reiciendis accusamus totam, veniam iusto numquam distinctio.
         Dignissimos labore aspernatur pariatur?
       </p>
-      <a href="#" className="btn">
+
+
+      <Link to="/project" className="btn">
         Ver Projetos
-      </a>
+      </Link>
     </section>
   );
 };
