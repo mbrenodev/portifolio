@@ -1,15 +1,15 @@
-import MainContent from './components/MainContent';
-import Sidebar from './components/Sidebar';
+import { BrowserRouter } from 'react-router-dom'
+
 
 import './styles/components/app.sass';
+import { Router } from './router';
 
 function App() {
   return (
-    <div id='portfolio'>
-      <h1>Christie</h1>
-      <Sidebar />
-      <MainContent />
-    </div>
+    <BrowserRouter>
+      <Router />      
+    </BrowserRouter>
+
   )
 }
 

@@ -1,8 +1,8 @@
 
-const Projetos = () => {
+export const Projetos = () => {
   return (
-    <div>Projetos</div>
+    <div> 
+      <h1>Hello</h1>
+    </div>
   )
 }
-
-export default Projetos
