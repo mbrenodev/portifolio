@@ -1,4 +1,4 @@
-import MainContent from "../components/MainContent"
+import MainContent from "../components/MainContent/MainContent"
 import { NavBar } from "../components/NavBar"
 import Sidebar from "../components/Sidebar"
 
