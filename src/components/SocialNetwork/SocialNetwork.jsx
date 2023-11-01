@@ -1,6 +1,6 @@
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 
-import "../styles/components/socialnetworkcontainer.sass";
+import "./SocialNetwork.sass";
 
 const socialNetworks = [
   { name: "linkedin", icon: <FaLinkedinIn /> },
@@ -8,7 +8,7 @@ const socialNetworks = [
   { name: "instagram", icon: <FaInstagram /> },
 ];
 
-const SocialNetworkContainer = () => {
+const SocialNetwork = () => {
   return (
     <section id="social-networks">
       {socialNetworks.map((network) => (
@@ -20,4 +20,4 @@ const SocialNetworkContainer = () => {
   );
 };
 
-export default SocialNetworkContainer;
+export default SocialNetwork;

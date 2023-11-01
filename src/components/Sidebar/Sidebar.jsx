@@ -1,5 +1,5 @@
-import SocialNetworkContainer from "../SocialNetworkContainer";
-import InformationContainer from "../InformationContainer/InformationContainer.jsx";
+import SocialNetwork from "../SocialNetwork/SocialNetwork";
+import Information from "../Information/Information.jsx";
 
 import Avatar from "../../img/chs.png";
 
@@ -10,8 +10,8 @@ const Sidebar = () => {
     <aside id="sidebar">
       <img src={Avatar} alt="Chs" />
       <p className="title">Desenvolvedor</p>
-      <SocialNetworkContainer />
-      <InformationContainer />
+      <SocialNetwork />
+      <Information />
       <a href="#" className="btn">
         Download currículo
       </a>
