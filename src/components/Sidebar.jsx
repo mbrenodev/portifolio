@@ -1,5 +1,5 @@
 import SocialNetworkContainer from "./SocialNetworkContainer";
-import InformationContainer from "./InformationContainer";
+import InformationContainer from "../components/InformationContainer/InformationContainer.jsx";
 
 import Avatar from "../img/chs.png";
 
