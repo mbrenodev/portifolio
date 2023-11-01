@@ -1,4 +1,4 @@
-import TechnologiesContainer from "../TechnologiesContainer";
+import Technologies from "../Technologies/Technologies";
 import AboutContainer from "../AboutContainer";
 import ProjectsContainer from "../ProjectsContainer";
 
@@ -8,7 +8,7 @@ const MainContent = () => {
   return (
     <main id="main-content">
       <AboutContainer />
-      <TechnologiesContainer />
+      <Technologies />
       <ProjectsContainer />
     </main>
   );
