@@ -1,5 +1,5 @@
 import MainContent from "../components/MainContent/MainContent"
-import { NavBar } from "../components/NavBar"
+import { NavBar } from "../components/NavBar/NavBar"
 import Sidebar from "../components/Sidebar"
 
 export const Home = () => {

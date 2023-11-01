@@ -1,5 +1,5 @@
 
-import "../styles/components/navbar.sass"
+import "./NavBar.sass";
 
 export const NavBar = () => {
   return (
