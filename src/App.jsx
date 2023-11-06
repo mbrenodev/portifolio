@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 import { Router } from './router';
 
-import './styles/components/app.sass';
+import './styles/app.sass';
 
 export function App() {
   return (

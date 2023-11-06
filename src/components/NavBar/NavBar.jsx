@@ -1,11 +1,12 @@
 
+import { Link } from "react-router-dom";
 import "./NavBar.sass";
 
 export const NavBar = () => {
   return (
     <div id="navbar">
-      <a href="#">Home</a>
-      <a href="#">Projetos</a>
+      <Link to="/">Home</Link>
+      <Link to="/project">Projetos</Link>
       <a href="#">Contato</a>
     </div>
   )
