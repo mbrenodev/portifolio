@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import { Projetos } from './pages/Projetos';
-import { Home } from './pages/Home';
+import { Projetos } from './pages/Projects/Projetos';
+import { Home } from './pages/Home/Home';
 import { NavBar } from './components/NavBar/NavBar';
 
 export function Router() {
