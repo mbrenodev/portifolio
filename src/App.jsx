@@ -1,12 +1,13 @@
-import { BrowserRouter } from 'react-router-dom'
-import { Router } from './router';
 
+import { Outlet } from 'react-router-dom';
 import './styles/app.sass';
 
 export function App() {
   return (
-    <BrowserRouter>
-      <Router />      
-    </BrowserRouter>
+    <div className='App'>
+      <p>oi</p>
+      <Outlet />
+
+    </div>
   )
 }
