@@ -2,7 +2,7 @@ import { AiFillPhone, AiOutlineMail, AiFillEnvironment } from "react-icons/ai";
 
 import "./Information.sass";
 
-const InformationContainer = () => {
+export const Information = () => {
   return (
     <section id="information">
       <div className="info-card">
@@ -30,4 +30,3 @@ const InformationContainer = () => {
   );
 };
 
-export default InformationContainer;

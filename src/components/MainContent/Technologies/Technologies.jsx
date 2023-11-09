@@ -9,6 +9,8 @@ import {
 
 import "./Technologies.sass";
 
+import { Link } from "react-router-dom";
+
 const technologies = [
   { id: "html", name: "HTML5", icon: <DiHtml5 /> },
   { id: "css", name: "CSS3", icon: <DiCss3 /> },
@@ -18,7 +20,7 @@ const technologies = [
   { id: "react", name: "React", icon: <DiReact /> },
 ];
 
-const TechnologiesContainer = () => {
+export const Technologies = () => {
   return (
     <section className="technologies-container">
       <h2>Tecnologias</h2>
@@ -33,8 +35,14 @@ const TechnologiesContainer = () => {
           </div>
         ))}
       </div>
+      <section className="projects-container">
+        <h2>Projetos</h2>
+        <Link to="/project" className="btn">
+          Ver Projetos
+        </Link>
+      </section>
     </section>
+
   );
 };
 
-export default TechnologiesContainer;

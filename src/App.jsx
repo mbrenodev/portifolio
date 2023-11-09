@@ -1,7 +1,8 @@
-
 import { Outlet } from 'react-router-dom';
-import './styles/app.sass';
+
 import { NavBar } from './components/NavBar/NavBar';
+
+import './styles/app.sass';
 
 export function App() {
   return (

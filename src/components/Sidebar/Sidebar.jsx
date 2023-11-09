@@ -1,5 +1,5 @@
-import SocialNetwork from "../SocialNetwork/SocialNetwork";
-import Information from "../Information/Information.jsx";
+import { SocialNetwork } from "./SocialNetwork/SocialNetwork.jsx";
+import { Information } from "./Information/Information.jsx";
 
 import Avatar from "../../img/chs.png";
 

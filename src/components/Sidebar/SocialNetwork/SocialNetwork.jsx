@@ -8,7 +8,7 @@ const socialNetworks = [
   { name: "instagram", icon: <FaInstagram /> },
 ];
 
-const SocialNetwork = () => {
+export const SocialNetwork = () => {
   return (
     <section id="social-networks">
       {socialNetworks.map((network) => (
@@ -20,4 +20,4 @@ const SocialNetwork = () => {
   );
 };
 
-export default SocialNetwork;
+
