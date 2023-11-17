@@ -7,8 +7,8 @@ const ProjectCard = ({ image, title, description }) => {
 
 
   return (
-    <li>
-      <div>
+    <li className='container'>
+      <div className='cardWrapper'>
         <LazyLoadImage
           alt="card-img"
           effect="blur"
@@ -21,9 +21,9 @@ const ProjectCard = ({ image, title, description }) => {
         />
 
 
-        <div >
-          <h3>{title}</h3>
-          <p>{description}</p>
+        <div className='cardBox'>
+          <h3 className='title'>{title}</h3>
+          <p className='description'>{description}</p>
         </div>
       </div>
     </li>
