@@ -16,7 +16,6 @@ export const Projects = () => {
 
       <ul>
         {Project.map((props) => (
-          // eslint-disable-next-line react/prop-types
           <ProjectCard key={props.id} {...props} />
         ))}
 
