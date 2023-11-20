@@ -1,6 +1,6 @@
 import { AiFillPhone, AiOutlineMail, AiFillEnvironment } from "react-icons/ai";
 
-import "./Information.sass";
+import "./Information.scss";
 
 export const Information = () => {
   return (
@@ -16,7 +16,7 @@ export const Information = () => {
         <AiOutlineMail id="email-icon" />
         <div>
           <h3>E-mail</h3>
-          <p>christiecardosoc@gmail.com</p>
+          <p>christie@gmail.com</p>
         </div>
       </div>
       <div className="info-card">

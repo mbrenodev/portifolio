@@ -1,6 +1,6 @@
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 
-import "./SocialNetwork.sass";
+import "./SocialNetwork.scss";
 
 const socialNetworks = [
   { name: "linkedin", icon: <FaLinkedinIn /> },

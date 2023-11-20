@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   DiHtml5,
   DiCss3,
@@ -7,9 +8,7 @@ import {
   DiReact,
 } from "react-icons/di";
 
-import "./Technologies.sass";
-
-import { Link } from "react-router-dom";
+import "./Technologies.scss";
 
 const technologies = [
   { id: "html", name: "HTML5", icon: <DiHtml5 /> },

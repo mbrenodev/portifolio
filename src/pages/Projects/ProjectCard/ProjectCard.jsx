@@ -1,27 +1,21 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-import './ProjectsCard.sass';
+import './ProjectCard.scss';
 
 const ProjectCard = ({ image, title, description }) => {
-
   return (
-    <li className='container'>
+    <section className='card'>
       <div className='cardWrapper'>
-        <LazyLoadImage
+        <img
           alt="card-img"
-          effect="blur"
           src={image.src}
-          width="70%"
-          style={{ minHeight: '15rem' }}
-          placeholderSrc={image.placeholderSrc}
+          width="100%"
         />
 
-        <div className='cardBox'>
+        <div className='cardBody'>
           <h3 className='title'>{title}</h3>
           <p className='description'>{description}</p>
         </div>
       </div>
-    </li>
+    </section>
   );
 };
 
