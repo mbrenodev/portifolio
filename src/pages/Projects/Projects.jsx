@@ -1,8 +1,8 @@
-import './Projects.sass';
+import './Project.sass';
 
 import Project from '../../data/projects'
 
-import ProjectCard from './ProjectsCard/ProjectsCard';
+import ProjectCard from './ProjectCard/ProjectCard';
 
 export const Projects = () => {
   return (
