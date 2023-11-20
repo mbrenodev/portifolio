@@ -3,7 +3,7 @@ import { Information } from "./Information/Information.jsx";
 
 import Avatar from "../../img/chs.png";
 
-import "./Sidebar.sass";
+import "./Sidebar.scss";
 
 const Sidebar = () => {
   return (

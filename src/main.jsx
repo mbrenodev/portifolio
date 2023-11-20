@@ -4,11 +4,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { App } from './App';
 import { Home } from './pages/Home/Home';
-import { Projects } from './pages/Projects/Projects';
+import { Projects } from './pages/Projects/Project';
 import { ErrorPage } from './pages/Error/ErrorPage';
 import { About } from './pages/About/About';
 
-import "./styles/main.sass";
+import "./styles/main.scss";
 
 const router = createBrowserRouter([
   {

@@ -1,0 +1,11 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.container {
+  display: grid;
+  flex-direction: column;
+}
+
+.title {
+  color: $text-color-secondary;
+}

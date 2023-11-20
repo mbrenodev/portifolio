@@ -1,7 +1,6 @@
 import { Technologies } from "./Technologies/Technologies";
 
-
-import "./MainContent.sass";
+import "./MainContent.scss";
 
 const MainContent = () => {
   return (
