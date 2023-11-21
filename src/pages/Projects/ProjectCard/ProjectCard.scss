@@ -1,5 +1,10 @@
+@import "../../../styles/mixins.scss";
+
 .card {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30%;
   padding: 50px 25px;
   min-width: 320px;
@@ -8,15 +13,16 @@
 .cardWrapper {
   padding: 1.25rem;
   display: flex;
+  flex-wrap: wrap; /* Adicionado */
   flex-direction: column;
   align-items: center;
   line-height: 1.5;
   border: none;
   border-radius: 0.5rem;
-
   transition: all 0.5s ease 0s;
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
   height: 100%;
+
   &:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
@@ -36,4 +42,9 @@
 
 .description {
   margin-bottom: 1rem;
+}
+
+.btn {
+  @include btn;
+
 }

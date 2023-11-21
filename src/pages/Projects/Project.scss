@@ -2,10 +2,22 @@
 @import "../../styles/variables";
 
 .container {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: start;
   flex-direction: column;
+}
+h1 {  
+  margin: auto;
 }
 
 .title {
   color: $text-color-secondary;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
 }

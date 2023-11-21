@@ -14,12 +14,12 @@ export const Projects = () => {
 
       </p>
 
-      <ul>
+      <section className='projects'>
         {Project.map((props) => (
           <ProjectCard key={props.id} {...props} />
         ))}
 
-      </ul>
+      </section>
 
     </div>
   );
