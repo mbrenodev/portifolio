@@ -1,33 +1,59 @@
-.container {
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.footer {
   display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  h1 {
-    font-size: 1rem;
-    color: var(--txt);
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  width: 100%;
+  flex-direction: column-reverse;
+  p {
+    color: $text-color-secondary;
+    margin-top: 0.7rem;
   }
 }
 
-.copyright {
-  flex: 1;
-  text-align: center;
-}
+#social-networks {
+  @include center;
+  gap: 1.2rem;
+  padding: 2rem;
 
-.body {
-  padding: 0.2rem 1rem;
-  font-size: 1.2rem;
-  color: var(--txt);
-  cursor: pointer;
-}
+  .social-btn {
+    padding: 0.7rem 0.8rem;
+    background-color: $bg-color-secondary;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    @include center;
+  }
+  #linkedin {
+    color: #0072b1;
+    &:hover {
+      background: $bt-linkedin-gradient;
 
-.socialIcons {
-  display: flex;
-  justify-content: center;
-  gap: 10px; 
-  list-style: none; 
-}
+      > svg {
+        color: $text-color;
+      }
+    }
+  }
 
+  #github {
+    color: #111;
+    &:hover {
+      background: $bt-github-gradient;
+
+      > svg {
+        color: $text-color;
+      }
+    }
+  }
+
+  #instagram {
+    color: #bc2a8d;
+    &:hover {
+      background: $bt-instagram-gradient;
+
+      > svg {
+        color: $text-color;
+      }
+    }
+  }
+}

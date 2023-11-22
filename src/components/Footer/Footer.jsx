@@ -1,51 +1,25 @@
+import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
+
 import './Footer.scss';
-import { AiFillGithub } from 'react-icons/ai';
-import {
-  FaFacebookSquare,
-  FaLinkedinIn,
-} from 'react-icons/fa';
+
+const socialNetworks = [
+  { name: "linkedin", icon: <FaLinkedinIn /> },
+  { name: "github", icon: <FaGithub /> },
+  { name: "instagram", icon: <FaInstagram /> },
+];
 
 export const Footer = () => {
   return (
-    <div className='container'>
-      <div className='copyright'>
-        <h1>© 2023 Todos os direitos reservados</h1>
-      </div>
+    <div className='footer'>
+      <p>© 2023 Todos os direitos reservados</p>
 
-      <div className='bod'>
-        <ul className='socialIcons'>
-          <li>
-            <a
-              href="https://github.com/ChristieCardoso"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="github"
-            >
-              <AiFillGithub />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/chrisstie.22"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="facebook"
-            >
-              <FaFacebookSquare />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/christie-cardoso-164a28235/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="linkedin"
-            >
-              <FaLinkedinIn />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <section id="social-networks">
+        {socialNetworks.map((network) => (
+          <a href="#" className="social-btn" id={network.name} key={network.name}>
+            {network.icon}
+          </a>
+        ))}
+      </section>
     </div>
   );
 };
