@@ -16,7 +16,7 @@ import {
 
 export const TechSkills = () => {
   return (
-    <ul className='container-sckills'>
+    <ul className='sckillsContainer'>
       <li className='techIcon'>
         <DiJavascript1 />
       </li>

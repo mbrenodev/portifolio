@@ -4,23 +4,18 @@ import './AboutText.scss';
 
 export const AboutText = () => {
   return (
-    <div className='card'>
+    <div className='aboutTextContainer'>
       <p>
-        Hi Everyone, I am{' '}
-        <span className='purple'>Snaichuk Volodymyr </span>
-        from <span className='purple'> Ternopil, Ukraine.</span>
+        Ola, Meu nome e {' '}
+        <span className='purple'>Christie Cardoso </span>
+        sou de  <span className='purple'> Belo Horizonte - MG</span>
         <br />
-        Software engineer with expertise in cross-platform development{' '}
+        Estudante de Análise e Desenvolvimento de Sistemas, com previsão de conclusão do curso em junho de 2024.
         <br />
-        using React Native.
+        Habilidades em JavaScript, HTML5/CSS3 e conhecimentos básicos em frameworks como ReactJs e TailwindCss.
         <br />
+        Procuro aprofundar conhecimentos por meio de cursos de Front-end na Rocketseat e Udemy. Habilidades em trabalho em equipe, adaptabilidade, comprometimento, criatividade e proatividade.
         <br />
-        I have a Bachelor's degree in Computer Science and
-        <br />
-        Master's degree in Project Management from Ternopil Academy.
-        <br />
-        <br />
-        Apart from coding, some other activities that I love to do!
       </p>
 
       <ul>

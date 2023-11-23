@@ -5,7 +5,7 @@ import './GitHubCalendar.scss';
 export const GithubCalendar = () => {
 
   return (
-    <div className='container'>
+    <div className='aboutGithubContainer'>
       <GitHubCalendar
         username="ChristieCardoso"
         blockSize={15}

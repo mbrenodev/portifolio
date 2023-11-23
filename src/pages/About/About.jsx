@@ -8,31 +8,30 @@ import { GithubCalendar } from './GitHubCalendar/GitHubCalendar';
 
 export const About = () => {
   return (
-    <section className="about-container">
-      <div className='content'>
-        <div className='about'>
-          <div>
-            <h1 className='title'>
-              Know Who <b className='purple'>I'M</b>
-            </h1>
-            <AboutText />
-          </div>
-
-          <div className='aboutImg'>
-            <img src={aboutPromoImg} alt="about" />
-          </div>
+    <section className='aboutContainer'>
+      <div className='about'>
+        <div>
+          <h1 className='aboutTitle'>
+            Deixe-me <b className='purple'>apresentar</b>
+          </h1>
+          <AboutText />
         </div>
 
-        <h2 className='skills'>
-          Professional <b className='purple'>Skills</b>
-        </h2>
-        <TechSkills />
-
-        <h2 className='githubActivity'>
-          Days I <b className='purple'>Code</b>
-        </h2>
-        <GithubCalendar />
+        <div className='aboutImg'>
+          <img src={aboutPromoImg} alt="about" />
+        </div>
       </div>
+
+      <h2 className='skills'>
+        <b className='purple'>Habilidades</b> profissionais
+      </h2>
+      <TechSkills />
+
+      <h2 className='githubActivity'>
+        <b className='purple'>Contribuições</b>
+      </h2>
+      <GithubCalendar />
+
     </section>
   )
 }

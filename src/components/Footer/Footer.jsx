@@ -10,12 +10,12 @@ const socialNetworks = [
 
 export const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footerContainer'>
       <p>© 2023 Todos os direitos reservados</p>
 
-      <section id="social-networks">
+      <section id="footerSocialNetworks">
         {socialNetworks.map((network) => (
-          <a href="#" className="social-btn" id={network.name} key={network.name}>
+          <a href="#" className="footerBtnSocial" id={network.name} key={network.name}>
             {network.icon}
           </a>
         ))}

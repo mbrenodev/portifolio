@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
-.footer {
+.footerContainer {
   display: flex;
   align-items: center;
   width: 100%;
@@ -12,12 +12,12 @@
   }
 }
 
-#social-networks {
+#footerSocialNetworks {
   @include center;
   gap: 1.2rem;
   padding: 2rem;
 
-  .social-btn {
+  .footerBtnSocial {
     padding: 0.7rem 0.8rem;
     background-color: $bg-color-secondary;
     border-radius: 50%;
