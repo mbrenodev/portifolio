@@ -1,20 +1,38 @@
+import './About.scss';
+
+import aboutPromoImg from '../../img/chs.png';
+import { AboutText } from './AboutText/AboutText';
+import { TechSkills } from './TechSckills/TechSckills';
+import { GithubCalendar } from './GitHubCalendar/GitHubCalendar';
+
 
 export const About = () => {
   return (
     <section className="about-container">
-    <h2>Sobre</h2>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, dolores!
-      Repellendus eius consequuntur, voluptate deserunt perferendis mollitia
-      debitis est autem aperiam necessitatibus beatae assumenda illo rem
-      architecto quis dolor quae.
-    </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos veritatis
-      aperiam, odit nihil placeat, dolorum sequi reprehenderit fugiat,
-      distinctio provident impedit modi neque sapiente voluptate voluptates.
-      Maiores sint at dolores?
-    </p>
-  </section>
+      <div className='content'>
+        <div className='about'>
+          <div>
+            <h1 className='title'>
+              Know Who <b className='purple'>I'M</b>
+            </h1>
+            <AboutText />
+          </div>
+
+          <div className='aboutImg'>
+            <img src={aboutPromoImg} alt="about" />
+          </div>
+        </div>
+
+        <h2 className='skills'>
+          Professional <b className='purple'>Skills</b>
+        </h2>
+        <TechSkills />
+
+        <h2 className='githubActivity'>
+          Days I <b className='purple'>Code</b>
+        </h2>
+        <GithubCalendar />
+      </div>
+    </section>
   )
 }
