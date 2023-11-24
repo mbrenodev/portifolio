@@ -1,33 +1,40 @@
-import { ImPointRight } from 'react-icons/im';
+import { CgGym } from "react-icons/cg";
+import { IoFastFood, IoGameController } from "react-icons/io5";
+import { GiSoccerBall } from "react-icons/gi";
 
 import './AboutText.scss';
 
 export const AboutText = () => {
   return (
     <div className='aboutTextContainer'>
-      <p>
+      <p className="aboutText">
         Ola, Meu nome e {' '}
-        <span className='purple'>Christie Cardoso </span>
-        sou de  <span className='purple'> Belo Horizonte - MG</span>
+        <span >Christie Cardoso </span>
+        sou de  <span > Belo Horizonte - MG</span>
         <br />
-        Estudante de Análise e Desenvolvimento de Sistemas, com previsão de conclusão do curso em junho de 2024.
+        Estudo Análise e Desenvolvimento de Sistemas, com previsão de conclusão em junho de 2024.
         <br />
-        Habilidades em JavaScript, HTML5/CSS3 e conhecimentos básicos em frameworks como ReactJs e TailwindCss.
+        Habilidades em JavaScript, HTML5/CSS3, Sass, Git, Figma, Postman, conhecimentos básicos em ReactJS, TypeScript e nas bibliotecas de UI TailwindCSS e Material-UI.
         <br />
-        Procuro aprofundar conhecimentos por meio de cursos de Front-end na Rocketseat e Udemy. Habilidades em trabalho em equipe, adaptabilidade, comprometimento, criatividade e proatividade.
+        Busco constantemente aprimorar minhas habilidades em Front-end, por meio de cursos na Rocketseat, Udemy, entre outros. Além disso, possuo habilidades em trabalho em equipe, adaptabilidade, comprometimento, criatividade e proatividade.
         <br />
       </p>
 
       <ul>
-        <li className='aboutActivity'>
-          <ImPointRight /> Playing Games
+        <span className="aboutTileHobby">Hooby</span>
+        <li>
+          <IoFastFood className="aboutIcon" /> Sair para comer
         </li>
-        <li className='aboutActivity'>
-          <ImPointRight /> Reading
+        <li>
+          <IoGameController className="aboutIcon" /> Video Game
         </li>
-        <li className='aboutActivity'>
-          <ImPointRight /> Travelling
+        <li>
+          <CgGym className="aboutIcon" /> Academia
         </li>
+        <li>
+          <GiSoccerBall className="aboutIcon" /> Fotebol
+        </li>
+
       </ul>
     </div>
   );

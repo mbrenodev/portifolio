@@ -1,22 +1,49 @@
-.purple {
-  color: #cd5ff8;
-}
+@import "../../../styles/variables.scss";
 
 .aboutTextContainer {
-  padding: 1.25rem;
+  width: 85%;
+  padding: 1rem;
+  color: $text-color;
   font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 1.4;
   flex-direction: column;
 
   p {
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  span {
+    color: $about-title-purple;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      list-style: none;
+    }
+
+    .aboutTileHobby {
+      margin-bottom: 1rem;
+      padding-left: 1.55rem;
+    }
+
+    .aboutIcon {
+      color: $text-color-secondary;
+    }
   }
 }
 
-.aboutActivity {
-  list-style: none;
-  text-align: left;
-  padding-left: 1px;
+@media (max-width: 800px) {
+  .aboutText {
+    padding: 3rem;
+    width: 450px;
+  }
 }

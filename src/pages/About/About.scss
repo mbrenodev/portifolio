@@ -1,59 +1,81 @@
+@import "../../styles/variables.scss";
+
 .aboutContainer {
-  padding: 1rem 7rem 3rem;
+  width: 100%;
+  padding: 1rem 3rem 3rem;
 }
 
 .about {
-  padding-left: 0.2rem;
-  font-size: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
+  padding-left: 0.2rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 
-.aboutImg {
-  width: 40%;
-  min-width: 320px;
-  padding: 4rem 1rem 5rem 1rem;
+  .aboutTitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding: 20px;
 
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
+    b {
+      color: $about-title-purple;
+    }
+  }
+
+  .aboutImg {
+    width: 40%;
+    min-width: 320px;
+    padding: 1rem;
+    margin-bottom: 5rem;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
-.aboutTitle {
-  text-align: center;
-  font-weight: 500;
-  font-size: 2rem;
-  padding: 20px;
-  b {
-    color: #cd5ff8;
+.aboutTechSckillsContainer {
+  margin-top: 4rem;
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    color: $about-title-purple;
+    font-size: 2.2rem;
+    padding-bottom: 3rem;
   }
 }
 
-.skills {
-  @extend .aboutTitle;
-  font-size: 2.2rem;
-  padding-top: 3rem;
-}
+.aboutGithubContainer {
+  flex-direction: column;
+  margin-top: 6rem;
 
-.githubActivity {
-  @extend .aboutTitle;
-  font-size: 2.2rem;
-  padding-top: 3rem;
-}
-
-
-
-@media (max-width: 925px) {
-  .content {
-    padding: 6rem 3rem 1rem;
+  .githubActivity {
+    display: flex;
+    justify-content: center;
+    color: $about-title-purple;
+    font-size: 2.2rem;
+    padding-bottom: 3rem;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .about {
     flex-wrap: wrap;
+  }
+
+  .aboutContainer {
+    padding: 0;
+  }
+
+  .aboutTextContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .aboutGithubContainer {
+    display: none;
   }
 }

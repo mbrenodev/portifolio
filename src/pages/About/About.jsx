@@ -1,36 +1,41 @@
-import './About.scss';
-
 import aboutPromoImg from '../../img/chs.png';
 import { AboutText } from './AboutText/AboutText';
 import { TechSkills } from './TechSckills/TechSckills';
 import { GithubCalendar } from './GitHubCalendar/GitHubCalendar';
 
+import './About.scss';
 
 export const About = () => {
   return (
     <section className='aboutContainer'>
       <div className='about'>
-        <div>
+        <div className='aboutTextContainer'>
           <h1 className='aboutTitle'>
-            Deixe-me <b className='purple'>apresentar</b>
+            Deixe-me <b>apresentar</b>
           </h1>
           <AboutText />
         </div>
 
         <div className='aboutImg'>
-          <img src={aboutPromoImg} alt="about" />
+          <img src={aboutPromoImg} alt="about-img" />
         </div>
       </div>
 
-      <h2 className='skills'>
-        <b className='purple'>Habilidades</b> profissionais
-      </h2>
-      <TechSkills />
+      <div className='aboutTechSckillsContainer'>
+        <h2 className='skills'>
+          Habilidades
+        </h2>
+        <TechSkills />
+      </div>
 
-      <h2 className='githubActivity'>
-        <b className='purple'>Contribuições</b>
-      </h2>
-      <GithubCalendar />
+
+      <div className='aboutGithubContainer'>
+        <h2 className='githubActivity'>
+          Contribuições
+        </h2>
+        <GithubCalendar />
+      </div>
+
 
     </section>
   )

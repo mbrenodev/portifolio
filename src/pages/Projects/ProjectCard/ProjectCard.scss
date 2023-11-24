@@ -33,26 +33,43 @@
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+
+  .projectTitle {
+    margin-bottom: 0.75rem;
+    font-size: 1.55rem;
+    text-align: center;
+    color: $text-color;
+  }
+
+  .projectDescription {
+    margin-bottom: 2rem;
+    color: $text-color-secondary;
+    font-style: italic;
+    font-size: 20px;
+  
+   
+  }
+
+  .projectBtnContainer {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .projectBtn {
+    @include btn-project;
+  }
 }
 
-.projectTitle {
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
-  text-align: center;
-  color: $text-color;
-}
+@media (max-width: 800px) {
+  .projectCardBody {
+    padding: 2rem;
+    width: 450px;
+  }
+  .projectTitle {
+    font-size: 1.7rem;
+  }
 
-.projectDescription {
-  margin-bottom: 2rem;
-  color: $text-color-secondary;
-  font-style: italic;
-}
-
-.projectBtnContainer {
-  display: flex;
-  gap: 4rem;
-}
-
-.projectBtn{
-  @include btn-project;
+  .projectDescription {
+    font-size: 1.3rem;
+  }
 }
