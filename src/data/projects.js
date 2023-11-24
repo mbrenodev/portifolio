@@ -29,12 +29,12 @@ const data = [
     id: '3',
     title: 'Nlw - SpaceTime',
     description:
-      'Projeto do evento NLW da Rocketseat permite upload de imagens com data e descrição, além de sistema de login integrado ao GitHub com Next.js, TypeScript, Axios, Tailwind CSS, JWT e ESLint.',
+      'Projeto do evento NLW da Rocketseat permite upload de imagens com data e descrição, além de sistema de login integrado ao GitHub com Next.js, TypeScript, Axios, Tailwind CSS, JWT, Js-cookie e ESLint.',
     image: {
       src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/wexox2bldu9vz1yz4dj1.jpg',
     },
     links: {
-      repo: 'https://github.com/vsnaichuk/fashion-app',
+      repo: 'https://github.com/ChristieCardoso/nlw-spacetime-front',
     },
   },
   // {
