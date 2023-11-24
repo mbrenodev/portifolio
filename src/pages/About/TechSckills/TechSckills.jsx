@@ -6,13 +6,17 @@ import {
   DiMongodb,
   DiGit,
   DiSass,
+  DiMysql,
+  DiWordpress
+
 } from 'react-icons/di';
 import {
   SiTypescript,
-  SiRedux,
-  SiSocketdotio,
-  SiAmazonaws,
+  SiTailwindcss,
+  SiPostman,
+  SiJest
 } from 'react-icons/si';
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const TechSkills = () => {
   return (
@@ -24,29 +28,39 @@ export const TechSkills = () => {
         <SiTypescript />
       </li>
       <li className='techIcon'>
-        <DiNodejs />
+        <DiReact />
       </li>
       <li className='techIcon'>
-        <DiReact />
+        <TbBrandNextjs />
+      </li>
+      <li className='techIcon'>
+        <DiNodejs />
       </li>
       <li className='techIcon'>
         <DiMongodb />
       </li>
       <li className='techIcon'>
+        <DiMysql />
+      </li>
+      <li className='techIcon'>
         <DiSass />
       </li>
       <li className='techIcon'>
-        <SiAmazonaws />
+        <SiTailwindcss />
       </li>
       <li className='techIcon'>
-        <SiRedux />
-      </li>
-      <li className='techIcon'>
-        <SiSocketdotio />
+        <DiWordpress />
       </li>
       <li className='techIcon'>
         <DiGit />
       </li>
+      <li className='techIcon'>
+        <SiPostman />
+      </li>
+      <li className='techIcon'>
+        <SiJest />
+      </li>
+
     </ul>
   );
 };

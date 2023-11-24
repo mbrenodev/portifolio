@@ -23,7 +23,7 @@ export const About = () => {
 
       <div className='aboutTechSckillsContainer'>
         <h2 className='skills'>
-          Habilidades
+          Estudando
         </h2>
         <TechSkills />
       </div>
