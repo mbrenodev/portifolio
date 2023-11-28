@@ -1,7 +1,7 @@
 
 import { Information } from "./Information/Information.jsx";
 
-import Avatar from "../../img/chs.png";
+import Avatar from "../../../img/chs.png";
 
 import "./Sidebar.scss";
 
