@@ -23,26 +23,25 @@ const technologies = [
 const MainContent = () => {
   return (
     <main className="MainContainer">
-      <div className="technologies-container">
+      <div className="MainTechnologies">
         <h2>Conhecimentos</h2>
-        <div className="technologies-grid">
+        <div className="MainContainerCard">
           {technologies.map((tech) => (
-            <div className="technology-card" id={tech.id} key={tech.id}>
+            <div className="MainCard" id={tech.id} key={tech.id}>
               {tech.icon}
-              <div className="technology-info">
+              <div className="MainCardInfo">
                 <h3>{tech.name}</h3>
                 <p>{tech.age}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="projects-container">
-          <Link to="/about" className="btn">
-            Veja Mais
-          </Link>
-        </div>
       </div>
-
+      <div className="HomeContainerBtn">
+        <Link to="/about" className="HomeBtn">
+          Veja Mais
+        </Link>
+      </div>
     </main>
   );
 };
