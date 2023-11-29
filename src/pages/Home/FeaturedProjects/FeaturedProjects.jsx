@@ -1,7 +1,7 @@
-import React from 'react'
+import './FeaturedProjects.scss';
 
 export const FeaturedProjects = () => {
   return (
-    <div>FeaturedProjects</div>
+    <div className='FeaturedProjectsContainer'>FeaturedProjects</div>
   )
 }

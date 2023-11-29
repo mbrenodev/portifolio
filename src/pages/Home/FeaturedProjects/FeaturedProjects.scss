@@ -1,0 +1,14 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins";
+
+.FeaturedProjectsContainer {
+  background-color: $bg-color;
+  border-radius: $container-border-radius;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 3rem 0;
+}

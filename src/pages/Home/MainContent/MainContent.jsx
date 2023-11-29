@@ -8,8 +8,6 @@ import {
   DiReact,
 } from "react-icons/di";
 
-
-
 import "./MainContent.scss";
 
 const technologies = [
@@ -24,8 +22,8 @@ const technologies = [
 
 const MainContent = () => {
   return (
-    <main id="main-content">
-      <section className="technologies-container">
+    <main className="MainContainer">
+      <div className="technologies-container">
         <h2>Conhecimentos</h2>
         <div className="technologies-grid">
           {technologies.map((tech) => (
@@ -38,12 +36,12 @@ const MainContent = () => {
             </div>
           ))}
         </div>
-        <section className="projects-container">
+        <div className="projects-container">
           <Link to="/about" className="btn">
             Veja Mais
           </Link>
-        </section>
-      </section>
+        </div>
+      </div>
 
     </main>
   );

@@ -1,16 +1,11 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/mixins";
 
-#main-content {
-  background-color: $bg-color;
+.MainContainer {
   flex: 2 1 0;
-  border-radius: $container-border-radius;
   padding: 3rem;
-
-  section {
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: $bg-color;
+  border-radius: $container-border-radius;
 
   h2 {
     color: $text-color;
@@ -30,9 +25,12 @@
     margin-bottom: 1rem;
     line-height: 1.3rem;
   }
+  .projects-container {
+    display: flex;
+    justify-content: center;
+  }
 
   .btn {
-    align-self: start;
     @include btn;
   }
 }
@@ -43,7 +41,9 @@
   .technologies-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
+    padding: 1rem;
   }
 
   .technology-card {
@@ -100,4 +100,3 @@
     }
   }
 }
-
