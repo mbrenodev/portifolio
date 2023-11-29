@@ -1,0 +1,81 @@
+@import "../../../../styles/mixins.scss";
+
+.FeaturedProjectCardContainer {
+  display: flex;
+  width: 32%;
+  min-width: 20rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3.125rem 0.9rem;
+}
+
+.FeaturedProjectCard {
+  display: flex;
+  height: 100%;
+  padding: 1.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  line-height: 1.5;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+  }
+}
+
+.FeaturedProjectCardBody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  .FeaturedProjectCardTitle {
+    margin-bottom: 0.75rem;
+    font-size: 1.55rem;
+    text-align: center;
+    color: $text-color;
+  }
+
+  .FeaturedProjectDescription {
+    margin-bottom: 2rem;
+    color: $text-color-secondary;
+    font-style: italic;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 320px;
+
+    .FeaturedProjectDescription::before {
+      content: "... ";
+    }
+  }
+
+  .FeaturedProjectBtnContainer {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .projectBtn {
+    @include btn-project;
+  }
+}
+
+@media (max-width: 800px) {
+  .FeaturedProjectCardBody {
+    padding: 2rem;
+    width: 300px;
+  }
+  .FeaturedProjectCardTitle {
+    font-size: 1.7rem;
+  }
+
+  .FeaturedProjectDescription {
+    font-size: 1.3rem;
+  }
+}

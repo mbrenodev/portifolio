@@ -20,7 +20,7 @@ const technologies = [
 ];
 
 
-const MainContent = () => {
+export const MainContent = () => {
   return (
     <main className="MainContainer">
       <div className="MainTechnologies">
@@ -45,5 +45,3 @@ const MainContent = () => {
     </main>
   );
 };
-
-export default MainContent;

@@ -8,10 +8,13 @@
   margin: auto;
   flex-direction: column;
   
-  h1 {
-    margin: auto;
-    font-size: 1.875rem;
+  .ProjectTitle {
+    width: 100%;
     color: $text-color;
+    font-size: 2.2rem;
+    margin-bottom: 1.3rem;
+    @include center;
+
   }
 
   h3 {
