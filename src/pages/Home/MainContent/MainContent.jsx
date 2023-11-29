@@ -24,14 +24,14 @@ export const MainContent = () => {
   return (
     <main className="MainContainer">
       <div className="MainTechnologies">
-        <h2>Conhecimentos</h2>
+        <h2 className="MainContentTitle">Conhecimentos</h2>
         <div className="MainContainerCard">
           {technologies.map((tech) => (
             <div className="MainCard" id={tech.id} key={tech.id}>
               {tech.icon}
               <div className="MainCardInfo">
-                <h3>{tech.name}</h3>
-                <p>{tech.age}</p>
+                <h3 className="MainCardInfoTitle">{tech.name}</h3>
+                <p className="MainCardInfoAge">{tech.age}</p>
               </div>
             </div>
           ))}

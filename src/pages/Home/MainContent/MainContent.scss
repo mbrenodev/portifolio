@@ -106,3 +106,16 @@
 .HomeBtn {
   @include btn;
 }
+
+@media (max-width: 800px) {
+  .MainContentTitle {
+    width: 300px;
+  }
+
+  .MainCardInfoTitle {
+    display: none;
+  }
+  .MainCardInfoAge {
+    display: none;
+  }
+}
