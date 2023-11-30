@@ -1,0 +1,39 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins";
+
+.FeaturedProjectContainer {
+  background-color: $bg-color;
+  border-radius: $container-border-radius;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 3rem 0;
+}
+
+.FeaturedProject {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+.FeaturedProjectTitle {
+  width: 100%;
+  color: $text-color;
+  font-size: 2.2rem;
+  margin-bottom: 1.3rem;
+  @include center;
+  justify-content: center;
+  gap: 1rem;
+
+  &:after {
+    @include gradient-border;
+  }
+}
+
+@media (max-width: 800px) {
+  .FeaturedProjectTitle {
+    width: 300px;
+    margin: auto;
+  }
+}

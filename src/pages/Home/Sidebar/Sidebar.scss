@@ -1,7 +1,7 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/mixins";
 
-#sidebar {
+.SidebarContainer {
   background-color: $bg-color;
   flex: 1 1 0;
   border-radius: $container-border-radius;
@@ -19,20 +19,21 @@
     top: -3rem;
   }
 
-  .title {
+  .SidebarTitle {
     color: $text-color-secondary;
     background-color: $bg-color-secondary;
     border-radius: $card-border-radius;
-    margin-top: 10rem;
+    margin-top: 9rem;
+    margin-bottom: 2rem;
     padding: 0.8rem 1.2rem;
   }
 
-  .btn {
+  .SidebarBtn {
     @include btn;
   }
 }
 
-#information {
+.SidebarInfoContainer {
   @include center;
   flex-direction: column;
   background-color: $bg-color-secondary;
@@ -42,7 +43,7 @@
   width: 80%;
   border-radius: $card-border-radius;
 
-  .info-card {
+  .SidebarInfoCard {
     @include center;
     justify-content: start;
     gap: 1rem;
@@ -70,8 +71,8 @@
       border-radius: $card-border-radius;
     }
 
-    #phone-icon {
-      color: #e93b81;
+    #whatsapp-icon {
+      color: #3be984;
     }
 
     #pin-icon {

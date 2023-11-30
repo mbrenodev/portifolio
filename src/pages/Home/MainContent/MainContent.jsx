@@ -8,8 +8,6 @@ import {
   DiReact,
 } from "react-icons/di";
 
-
-
 import "./MainContent.scss";
 
 const technologies = [
@@ -22,31 +20,28 @@ const technologies = [
 ];
 
 
-const MainContent = () => {
+export const MainContent = () => {
   return (
-    <main id="main-content">
-      <section className="technologies-container">
-        <h2>Conhecimentos</h2>
-        <div className="technologies-grid">
+    <main className="MainContainer">
+      <div className="MainTechnologies">
+        <h2 className="MainContentTitle">Conhecimentos</h2>
+        <div className="MainContainerCard">
           {technologies.map((tech) => (
-            <div className="technology-card" id={tech.id} key={tech.id}>
+            <div className="MainCard" id={tech.id} key={tech.id}>
               {tech.icon}
-              <div className="technology-info">
-                <h3>{tech.name}</h3>
-                <p>{tech.age}</p>
+              <div className="MainCardInfo">
+                <h3 className="MainCardInfoTitle">{tech.name}</h3>
+                <p className="MainCardInfoAge">{tech.age}</p>
               </div>
             </div>
           ))}
         </div>
-        <section className="projects-container">
-          <Link to="/about" className="btn">
-            Veja Mais
-          </Link>
-        </section>
-      </section>
-
+      </div>
+      <div className="HomeContainerBtn">
+        <Link to="/about" className="HomeBtn">
+          Veja Mais
+        </Link>
+      </div>
     </main>
   );
 };
-
-export default MainContent;
