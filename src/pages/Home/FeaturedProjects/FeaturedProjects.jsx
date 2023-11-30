@@ -16,7 +16,7 @@ export const FeaturedProjects = () => {
       </h1>
 
       <section className='FeaturedProject'>
-        {Project.filter((props) => props.id === '1' || props.id === '2').map((props) => (
+        {Project.filter((props) => props.id === '1' || props.id === '3').map((props) => (
           <ProjectCard key={props.id} {...props} />
         ))}
       </section>

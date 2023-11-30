@@ -1,7 +1,7 @@
 import { Sidebar } from "./Sidebar/Sidebar"
 import { MainContent } from "./MainContent/MainContent"
 import { FeaturedProjects } from "./FeaturedProjects/FeaturedProjects"
-import { ProfessionalExperience } from "./ProfessionalExperience/ProfessionalExperience";
+import { WorkExperience } from "./WorkExperience/WorkExperience";
 
 import './Home.scss';
 
@@ -16,7 +16,7 @@ export const Home = () => {
         <FeaturedProjects />
       </div>
       <div className="HomeExperience">
-        <ProfessionalExperience />
+        <WorkExperience />
       </div>
     </div>
   )

@@ -23,7 +23,7 @@ export const AboutText = () => {
       <ul>
         <span className="aboutTileHobby">Hooby</span>
         <li>
-          <IoFastFood className="aboutIcon" /> Sair para comer
+          <IoFastFood className="aboutIcon" /> Gastronomia
         </li>
         <li>
           <IoGameController className="aboutIcon" /> Video Game
