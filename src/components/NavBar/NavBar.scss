@@ -1,14 +1,57 @@
 @import "../../styles/variables";
 
-#navbar {
+.NavbarContainer {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
-  font-size: 18px;
   width: 100%;
+  justify-content: end;
+  gap: 3rem;
+  font-size: 1.2rem;
   margin-bottom: 5rem;
 }
-a {
-  text-decoration: none;
+
+.NavLink {
+  display: inline-block;
   color: $text-color;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+}
+
+.NavLink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.2rem;
+  background: $about-title-purple;
+  transition: width 0.4s;
+}
+
+.NavLink:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .NavLink {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .NavLink {
+    display: inline-block;
+    color: $text-color;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+  }
+
+  .NavLink::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.2rem;
+    background: $about-title-purple;
+    transition: width 0.4s;
+  }
+
+  .NavLink:hover::after {
+    width: 100%;
+  }
 }
