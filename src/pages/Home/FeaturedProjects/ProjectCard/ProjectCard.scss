@@ -63,6 +63,7 @@
 
   .projectBtn {
     @include btn-project;
+    color: $text-color;
   }
 }
 

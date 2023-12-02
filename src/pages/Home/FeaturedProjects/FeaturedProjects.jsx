@@ -1,12 +1,8 @@
-
+import Project from '../../../data/projects'
+import ProjectCard from './ProjectCard/ProjectCard';
+import { Link } from 'react-router-dom';
 
 import './FeaturedProjects.scss';
-
-
-import ProjectCard from './ProjectCard/ProjectCard';
-
-import Project from '../../../data/projects'
-import { Link } from 'react-router-dom';
 
 export const FeaturedProjects = () => {
   return (

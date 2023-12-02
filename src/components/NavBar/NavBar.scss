@@ -21,7 +21,7 @@
   display: block;
   width: 0;
   height: 0.2rem;
-  background: $about-title-purple;
+  background: $gradient;
   transition: width 0.4s;
 }
 
@@ -47,7 +47,7 @@
     display: block;
     width: 0;
     height: 0.2rem;
-    background: $about-title-purple;
+    background: $gradient;
     transition: width 0.4s;
   }
 

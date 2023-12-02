@@ -2,6 +2,7 @@ import { AiOutlineWhatsApp, AiOutlineMail, AiFillEnvironment } from "react-icons
 import Avatar from "../../../img/chs.png";
 
 import "./Sidebar.scss";
+import { BottonCurriculo } from "../../../components/Botton/BottonCurriculo";
 
 export const Sidebar = () => {
   return (
@@ -31,9 +32,7 @@ export const Sidebar = () => {
           </div>
         </div>
       </section>
-      <a href="#" className="SidebarBtn">
-        Download currículo
-      </a>
+        <BottonCurriculo />
     </aside>
   );
 };
