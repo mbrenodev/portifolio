@@ -4,10 +4,10 @@ import "./NavBar.scss";
 
 export const NavBar = () => {
   return (
-    <div id="navbar">
-      <Link to="/">Home</Link>
-      <Link to="/project">Projetos</Link>
-      <Link to="/about">Sobre</Link>
+    <div className="NavbarContainer">
+      <Link to="/" className="NavLink">Home</Link>
+      <Link to="/project" className="NavLink">Projetos</Link>
+      <Link to="/about" className="NavLink">Sobre</Link>
     </div>
   )
 }
